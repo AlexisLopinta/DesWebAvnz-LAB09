@@ -1,0 +1,16 @@
+<div>
+    <div class="text-center">
+        <h2 class="text-danger">Autos en venta</h2>
+      </div>
+    <div class="row">
+      <div class="col-md-6 mb-4" *ngFor="let imagen of imagenes">
+        <div class="card">
+          <img class="card-img-top" [src]="'assets/images/' + imagen.src" alt="{{imagen.title}}">
+          <div class="card-body">
+            <h5 class="card-title">{{imagen.title}}</h5>
+            <p class="card-text">{{imagen.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
